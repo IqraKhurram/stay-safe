@@ -1,0 +1,128 @@
+*{
+	margin: 0PX;
+	padding: 0PX;
+
+}
+
+
+body{
+		background: linear-gradient(#005580 , #00aaff);
+			background-size: cover;
+background-repeat: no-repeat;
+         font-family: 'Fredoka One', cursive;
+         
+
+}
+.flex{
+top: 30%;
+position: absolute;
+display: flex;
+justify-content: space-around;
+flex-direction:row;
+margin-left: 50px
+}
+ 
+
+.mask{
+ animation: mask 2s ease infinite alternate;
+ animation-delay: 3s;
+ opacity: 0%;
+}
+
+.text-animation{
+text-align: center;
+
+height:50vh;
+position: relative;
+width:30%;
+
+}
+.text-animation span{
+	display: block;
+}
+
+.t1{
+	color: white;
+	font-size: 90px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	background-color: transparent;
+	position: relative;
+	animation: welcome 3s 1;
+	text-shadow: 1px 4px  black;
+
+}
+
+.t2 {
+	color:WHITE;
+	font-size: 50px;
+	text-shadow: 1PX 1PX 2PX 4PX;
+    position:relative;
+	animation: text 3s 1;
+}
+
+@keyframes welcome {
+0%{
+	color:transparent;
+	margin-bottom: -40px;
+	text-shadow: none;
+
+}
+30%{
+	letter-spacing: 25px;
+	margin-bottom: -40%;
+	text-shadow: none;
+}
+85%{
+letter-spacing: 8px;
+margin-bottom: -40%
+}
+}
+
+@keyframes hand{
+	from{
+		border-radius: 30%
+	}
+	to{
+		border-radius: 0%
+	}
+}
+
+
+
+
+
+@keyframes text{
+	0%{
+		color:transparent;
+	}
+	30%{
+		color: transparent;
+	}
+	85%{
+		color: transparent;
+	}
+}
+@keyframes mask{
+	0%{
+		opacity: 0%
+	}
+	100%{
+		opacity: 100%
+	}
+}
+footer{
+	margin-top: 96vh;
+	color:white;
+	background-color: black;
+	text-align: center;
+	font-family: 'Baloo Tamma 2', cursive;
+
+
+	font-size: 25px;
+	padding: 20px;
+
+letter-spacing: 3px
+
+}
